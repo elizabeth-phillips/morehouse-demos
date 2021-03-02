@@ -2,10 +2,15 @@ let isZero = function(x){
   return new Promise(function(myResolve, myReject) {
     if (x == 0 && typeof(x) === Number) {
       // if the value is 0 and a number, resolve with the message of "OK"
+<<<<<<< HEAD
       myResolve("OK");
     } else {
       // if the value is not 0 or a number, reject with the message of "Error"
       myReject("Error");
+=======
+    } else {
+      // if the value is not 0 or a number, reject with the message of "Error"
+>>>>>>> 50fcc13 (Adds links to lessons)
     }
   });
 }
