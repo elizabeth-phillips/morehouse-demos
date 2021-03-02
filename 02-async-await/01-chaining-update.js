@@ -14,8 +14,18 @@ function slowAdder(a, b) {
     });
 }
 
-slowAdder(3, 5)
-    .then(first => slowAdder(first, 'banana'))   // error encountered, due to `banana` not being a number
-    .then(second => slowAdder(second, 20))   // this line is never executed as `banana` caused an error
-    .then(third => console.log(third))    // this line is never executed as well
-    .catch(error => console.log('ERROR:', error));          // the error handler
+async function runner(){
+    try{
+        let first = await slowAdder(3, 5);
+        let second = await slowAdder(first, 100);
+        let third = await slowAdder(second, 20);
+        console.log(third);
+    } catch(err){
+        console.log('ERROR:', err.message)
+    }
+    // .then(first => slowAdder(first, 'banana'))   // error encountered, due to `banana` not being a number
+    // .then(second => slowAdder(second, 20))   // this line is never executed as `banana` caused an error
+    // .then(third => console.log(third))    // this line is never executed as well
+    // .catch(error => console.log('ERROR:', error));          // the error handler
+}
+runner();

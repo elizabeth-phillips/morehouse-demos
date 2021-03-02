@@ -1,11 +1,17 @@
-function hello(name) {
-  if(typeof(name) === String) {
-    return Promise.resolve(`hello ${name}`) 
+async function hello(name) {
+  if(typeof(name) == 'string') {
+    return `hello ${name}`; // Promise.resolve(`hello ${name}`)
+    /*
+    new Promise((resolve) => resolve(`hello ${name}`))
+    */
   } else {
-    return Promise.reject("Bad")
+    return new TypeError("Bad"); // Promise.reject("Bad")
+    /*
+    new Promise((resolve, reject) => reject(`hello ${name}`))
+    */
   }
 };
 
-hello('hi')
+hello(123)
   .then(val => console.log(val))
-  .catch(err => console.log(err))
+  .catch(err => console.log(err.message))

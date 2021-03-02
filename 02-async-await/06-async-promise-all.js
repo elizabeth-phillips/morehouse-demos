@@ -7,13 +7,11 @@ function slowAdder(a, b) {
     });
 }
 
-function runner(){
+async function runner(){
     const promises = [slowAdder(1, 2), slowAdder(3, 4), slowAdder(5, 6)];
-    Promise.all(promises)
-        .then(data => {
-            console.log('data:', data)
-            const sum = data.reduce((a, b) => a + b, 0);
-            console.log('sum here', sum); 
-    });
+    const data = await Promise.all(promises)
+    console.log('data:', data)
+    const sum = data.reduce((a, b) => a + b, 0);
+    console.log('sum here', sum); 
 }
 runner();

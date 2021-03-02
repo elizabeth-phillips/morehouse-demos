@@ -14,7 +14,14 @@ const favColor = (color) => {
     })
 };
 
-
-Promise.all([favColor("red"), favColor("blue"), favColor("purple")])
-    .then(fulfilled => fulfilled)
-    .catch(rejected  => rejected)
+async function runner(){
+    try{
+        let fulfilled = await Promise.all([favColor("red"), favColor("blue"), favColor("purple")])
+        console.log(fulfilled())
+    } catch(err){
+        err()
+    }
+    // .then(fulfilled => fulfilled)
+    // .catch(rejected  => rejected)
+}
+runner()

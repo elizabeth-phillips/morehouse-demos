@@ -7,12 +7,21 @@ const p = function(){
     });
 }
 
-function runP(){
-    p().then(data => {        // `.then` is executed when the promise is resolved
+async function runP(){
+    try{
+        let data = await p();
         console.log(data);
-    }).catch(error => {     // `.catch` is executed if the promise is rejected
+    }
+    catch(error){
         console.log(error);
-    });
+    }
+    
+    // .then(data => {        // `.then` is executed when the promise is resolved
+    //     console.log(data);
+    // })
+    // .catch(error => {     // `.catch` is executed if the promise is rejected
+    //     console.log(error);
+    // });
 }
 runP();
 
