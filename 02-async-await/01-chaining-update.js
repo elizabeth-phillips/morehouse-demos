@@ -14,6 +14,7 @@ function slowAdder(a, b) {
     });
 }
 
+<<<<<<< HEAD:02-async-await/00-chaining-update.js
 async function runner(){
     try{
         let first = await slowAdder(3, 5);
@@ -29,3 +30,10 @@ async function runner(){
 console.log("before runner");
 runner();
 console.log("after runner");
+=======
+slowAdder(3, 5)
+    .then(first => slowAdder(first, 'banana'))   // error encountered, due to `banana` not being a number
+    .then(second => slowAdder(second, 20))   // this line is never executed as `banana` caused an error
+    .then(third => console.log(third))    // this line is never executed as well
+    .catch(error => console.log('ERROR:', error));          // the error handler
+>>>>>>> 2be84ed (Renames files to better fit content):02-async-await/01-chaining-update.js

@@ -7,7 +7,7 @@ const p = function(){
     });
 }
 
-async function runP(){
+function runP(){
     p().then(data => {        // `.then` is executed when the promise is resolved
         console.log(data);
     }).catch(error => {     // `.catch` is executed if the promise is rejected
