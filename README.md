@@ -3,8 +3,8 @@
 
 Topics covered:
 
-1. Promises
-2. Async/Await
+1. [Promises](https://github.com/om-morehouse/web-programming-spring2021/blob/master/javascript/promises.md)
+2. [Async/Await](https://github.com/om-morehouse/web-programming-spring2021/blob/master/javascript/async-await.md)
 
 
 Resources:
