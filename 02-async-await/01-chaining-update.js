@@ -1,7 +1,4 @@
-// Error handling
-
 function slowAdder(a, b) {
-    console.log('a, b', a, b)
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             if (typeof(a) !== 'number') {
@@ -18,8 +15,7 @@ function slowAdder(a, b) {
 }
 
 slowAdder(3, 5)
-    .then(first => slowAdder(first, 'banana'))              // we encounter an error here, due to `banana` not being a number
-    .then(second => slowAdder(second, 20))                  // this line is never executed as `banana` caused an error
-    .then(third => console.log(third))                       // this line is never executed as well
+    .then(first => slowAdder(first, 'banana'))   // error encountered, due to `banana` not being a number
+    .then(second => slowAdder(second, 20))   // this line is never executed as `banana` caused an error
+    .then(third => console.log(third))    // this line is never executed as well
     .catch(error => console.log('ERROR:', error));          // the error handler
-
