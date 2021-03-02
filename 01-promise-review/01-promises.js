@@ -1,7 +1,3 @@
-function myDisplayer(some) {
-  console.log(some);
-}
-
 let isZero = function(x){
   return new Promise(function(myResolve, myReject) {
     if (x == 0 && typeof(x) === Number) {
@@ -15,5 +11,5 @@ let isZero = function(x){
 }
 
 isZero(0)
-    .then((value) => myDisplayer(value))
-    .catch((error) => myDisplayer(error))
+    .then((value) => console.log(value))
+    .catch((error) => console.log(error))
