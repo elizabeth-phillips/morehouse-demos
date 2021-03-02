@@ -5,7 +5,7 @@ function getData() {
   });
 }
 
-function processData() {
+async function processData() {
     // get the data from getData
     // if getData resolves, output the sum of all of the numbers
     // if getData rejects, output "Error getting data:" and list the error message

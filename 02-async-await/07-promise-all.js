@@ -8,13 +8,17 @@ const favColor = (color) => {
             if (getColor === "red") {
                 resolve(console.log(`My favorite color is ${color}.`))
             } else {
-                reject(console.log(`${color} is NOT my favorite color.`));
+                reject(`${color} is NOT my favorite color.`);
             }
         },3000);
     })
 };
 
-
-Promise.all([favColor("red"), favColor("blue"), favColor("purple")])
-    .then(fulfilled => fulfilled)
-    .catch(rejected  => rejected)
+async function runner(){
+    try{
+        await Promise.all([favColor("red"), favColor("blue"), favColor("purple")])
+    } catch(err){
+        console.log(err);
+    }
+}
+runner();
