@@ -5,6 +5,10 @@ Topics covered:
 
 1. [Promises](https://github.com/om-morehouse/web-programming-spring2021/blob/master/javascript/promises.md)
 2. [Async/Await](https://github.com/om-morehouse/web-programming-spring2021/blob/master/javascript/async-await.md)
+3. [Why do we Test?](https://github.com/om-morehouse/web-programming-spring2021/blob/master/javascript/testing/why.md)
+4. [Types of Testing](https://github.com/om-morehouse/web-programming-spring2021/blob/master/javascript/testing/types.md)
+5. [Code Coverage](https://github.com/om-morehouse/web-programming-spring2021/blob/master/javascript/testing/coverage.md)
+6. [Javascript Testing](https://github.com/om-morehouse/web-programming-spring2021/blob/master/javascript/testing/javascript-testing.md)
 
 
 Resources:
