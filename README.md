@@ -9,6 +9,10 @@ Topics covered:
 4. [Types of Testing](https://github.com/om-morehouse/web-programming-spring2021/blob/master/javascript/testing/types.md)
 5. [Code Coverage](https://github.com/om-morehouse/web-programming-spring2021/blob/master/javascript/testing/coverage.md)
 6. [Javascript Testing](https://github.com/om-morehouse/web-programming-spring2021/blob/master/javascript/testing/javascript-testing.md)
+7. [SASS](https://github.com/om-morehouse/web-programming-spring2021/blob/master/web-essentials/sass.adoc)
+8. [CSS Frameworks](./05-CSSFrameworks/README.md)
+9. [DOM Intro](https://github.com/om-morehouse/web-programming-spring2021/blob/master/web-essentials/dom-intro.adoc)
+10. [DOM Manipulation](https://github.com/om-morehouse/web-programming-spring2021/blob/master/web-essentials/dom-manipulation.adoc)
 
 
 Resources:
