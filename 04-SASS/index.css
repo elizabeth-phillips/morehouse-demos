@@ -1,0 +1,31 @@
+.container {
+  width: 400px;
+  height: 200px;
+  background-color: lightgray;
+  border-radius: 20px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.first {
+  border-radius: 10px;
+  margin: auto 20px;
+  background-color: #ffb3b3;
+  border: 1px solid red;
+}
+
+.second {
+  border-radius: 10px;
+  margin: auto 20px;
+  background-color: lightgreen;
+  border: 1px solid green;
+}
+
+.third {
+  border-radius: 10px;
+  margin: auto 20px;
+  background-color: lightblue;
+  border: 1px solid blue;
+}
+
+/*# sourceMappingURL=index.css.map */

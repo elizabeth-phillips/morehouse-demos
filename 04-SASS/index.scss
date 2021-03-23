@@ -1,0 +1,34 @@
+$section-radius: 10px;
+$section-margin: auto 20px;
+$section-border-width: 1px;
+$section-border-pattern: solid;
+
+.container {
+  width: 400px;
+  height: 200px;
+  background-color: lightgray;
+  border-radius: 20px;
+  border: $section-border-width $section-border-pattern black;
+  text-align: center;
+}
+
+.first {
+  border-radius: $section-radius;
+  margin: $section-margin;
+  background-color: #ffb3b3;
+  border: $section-border-width $section-border-pattern red;
+}
+
+.second {
+  border-radius: $section-radius;
+  margin: $section-margin;
+  background-color: lightgreen;
+  border: $section-border-width $section-border-pattern green;
+}
+
+.third {
+  border-radius: $section-radius;
+  margin: $section-margin;
+  background-color: lightblue;
+  border: $section-border-width $section-border-pattern blue;
+}
