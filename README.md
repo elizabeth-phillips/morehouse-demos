@@ -13,6 +13,9 @@ Topics covered:
 8. [CSS Frameworks](./05-CSSFrameworks/README.md)
 9. [DOM Intro](https://github.com/om-morehouse/web-programming-spring2021/blob/master/web-essentials/dom-intro.adoc)
 10. [DOM Manipulation](https://github.com/om-morehouse/web-programming-spring2021/blob/master/web-essentials/dom-manipulation.adoc)
+11. [React Intro](https://github.com/om-morehouse/web-programming-spring2021/blob/master/react/foundations/react-intro.adoc)
+12. [Getting Started with React](https://github.com/om-morehouse/web-programming-spring2021/blob/master/react/foundations/getting-started.adoc)
+13. [JSX Expressions](https://github.com/om-morehouse/web-programming-spring2021/blob/master/react/foundations/jsx-expressions.adoc)
 
 
 Resources:
